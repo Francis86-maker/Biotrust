@@ -1,0 +1,83 @@
+body {
+  line-height: 1.6;
+  font-family: Arial, Helvetica;
+   background: linear-gradient(to right, white, lightblue);
+   overflow: none;
+}
+#movingBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: moveAround 5s linear infinite;
+}
+
+@keyframes moveAround {
+  0%   { top: 0; left: 0; }
+  25%  { top: 0; left: 80%; }
+  50%  { top: 80%; left: 80%; }
+  75%  { top: 80%; left: 0; }
+  100% { top: 0; left: 0; }
+}
+p{
+  font-weight: bold;
+}
+main {
+  background: linear-gradient(to right, white, lightblue);
+  align-items: center;
+  display: flex;
+  border: none;
+  border-radius: 7px;
+  flex-direction: column;
+}
+div{
+  color: black;
+}
+#div3{
+  animation-name: slideright;
+  animation-delay: 0s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 6s;
+  box-shadow: 2px 2px 2px ;
+  border-color: white;
+}
+@keyframes slideright{
+  from {transform: translateX(-100px)
+  }
+}
+
+    img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px gold;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+    }
+
+    img.show {
+      opacity: 1;
+    }
+    footer {
+      background-color: black ;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      animation-name: slideleft;
+      animation-duration: 5s;
+    }
+    @keyframes slideleft{
+      from { transform: translateX(100px)}
+    }
+    .images{
+      border: 5px;
+      width: 300px;
+    }
