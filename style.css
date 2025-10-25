@@ -59,11 +59,6 @@ div{
       border-radius: 10px;
       box-shadow: 0 0 15px gold;
       transition: opacity 1s ease-in-out;
-      opacity: 0;
-    }
-
-    img.show {
-      opacity: 1;
     }
     footer {
       background-color: black ;
