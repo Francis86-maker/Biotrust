@@ -60,6 +60,9 @@ div{
       box-shadow: 0 0 15px gold;
       transition: opacity 1s ease-in-out;
     }
+img:hover {
+  background-color: red;
+}
     footer {
       background-color: black ;
       display: flex;
