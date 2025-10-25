@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hospital</title>
+  <link rel ="stylesheet" href="style.css">
+</head>
+
+<body>
+<main>
+  <div id="div3">
+  <h1>BioTrust diagnostic labs</h1>
+  <img id="slideshow" src="img1.jpg" alt="slideshow">
+  <h2>Hello welcome to biotrust</h2>
+  <p>Our commitment for quality care, latest procedures , we have specialized doctors</p>
+  <p>We continuously keep improving the quality of health care services provided to the communities we serve and strive to bring healthcare services of international standards within reach of every individual</p>
+  </div>
+  <h3>Our vision </h3> <p>leading the way in laboratory excellence</p>
+    
+  <button id="movingBtn">📞</button>
+  <h2>services</h2>
+  <ul>
+    <li>CSF analysis</li>
+   <li>semen analysis/ sperm count</li>
+   <li>blood grouping</li> 
+   <li>lipid profile</li>
+   <li>liver function tests(LFT)</li>
+   <li>electrolytes</li>
+   <li>cardiac profile</li>
+   <li>brucella-AB(BAT)</li>
+   <details>
+     <li>CBC/FBC</li>
+     <li>sickle cell test</li>
+     <li>stool analysis</li>
+     <li>HIV PCR</li>
+     <li>HIV 1&2</li>
+     <li>yellow fever screening</li>
+     <li>Renal Function Tests</li>
+     <li>thyroid function tests</li>
+     <li>Cancer markers(CEA,PSA,PAP,ANA CA125, CA19-9)</li>
+     <li>Histology</li>
+     <li>COVID-19 tests</li>
+     <li>HBA1</li>
+     <li>Rheumatoid factor</li>
+     <li>Malaria</li>
+     <li>ESR</li>
+     <li>coagulation profile</li>
+     <li>reticulocyte count</li>
+     <li>serum crag </li>
+     <li>D-dimers</li>
+     <li>toxo titres</li>
+     <li>H-pylori</li>
+   </details>
+  </ul>
+  </div>
+  <img src="pic1.jpg" class="images">
+    <img src="pic1.jpg" class="images">
+    <img src="pic1.jpg" class="images">
+    <img src="pic1.jpg" class="images">  
+    <img src="pic1.jpg" class="images"><br>
+</main>
+<footer>
+<h3>Our location</h3>
+<p> biotrustdiagnosticlaboratories@gmail.com</p>
+<p>located: Plot 10 , Nizam road west JINJA</p>
+<p>POBOX 902328</p>
+</footer>
+ </body>
+  <script>
+    const images = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"]; // your image names
+    let index = 0;
+    const imgElement = document.getElementById("slideshow");
+
+    function changeImage() {
+      imgElement.classList.remove("show"); // fade out
+      setTimeout(() => {
+        index = (index + 1) % images.length;
+        imgElement.src = images[index];
+        imgElement.classList.add("show"); // fade in
+      }, 1000); // time for fade-out
+    }
+
+    setInterval(changeImage, 4000); // change every 4 seconds
+    imgElement.classList.add("show"); // show the first image
+  </script>
+</html>
